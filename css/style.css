@@ -1,0 +1,222 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nerko One', cursive;
+    background-color: #272B30;
+}
+
+.site-cover {
+    background-image: url(../img/wraper.png);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    margin-bottom: -70px;
+}
+
+nav {
+    background-color: #3A497B;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    margin-top: 3rem !important;
+}
+
+
+.logo h5 {
+    color:
+    rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400px;
+}
+
+.nav-item .nav-link {
+    color: white !important;
+    line-height: 18.375px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.nav-links {
+    width: 70%;
+}
+
+.nav-item .nav-link:hover {
+    color: #0D86B9 !important;
+}
+
+.nav-item .nav-link.active {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+
+.card h3 {
+    line-height: 16.8px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.card button {
+    height: 30px;
+    width: 60px;
+    text-align: center;
+}
+
+.card-footer span {
+    background-color: #32383E;
+    border-radius: 10px;
+    line-height: 10.5px;
+    font-weight: 700px;
+    font-size: 10.5px;
+}
+
+.card-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.card .game-details {
+    height: 80px;
+    color: #9D9E9F;
+    line-height: 21px;
+}
+.gamedetails {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #272B30;
+}
+
+.gamedetails .btn {
+    margin-bottom: 100px;
+}
+.img.vh-100 {
+    height: auto !important;
+    margin-bottom: 15px;
+}
+
+.card {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.gamedetails h2 {
+    color: white;
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 500px;
+}
+
+.gamedetails p {
+    color: white;
+
+}
+
+.gamedetails span {
+    color: #272B30;
+    background-color: #0DCAF0;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+
+.game-info .btn {
+    color: white;
+    border: 1px solid #FFC107;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+
+.game-info .btn :hover {
+    background-color: #FFC107;
+}
+
+#gamesData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 32%;
+}
+@media (max-width: 991px) {
+    .card {
+        width: 48%;
+    }
+
+    ;
+    .gamedetails .img {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 668px) {
+    .card {
+        width: 95%;
+    }
+
+    ;
+
+
+}
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+}
+
+.loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
